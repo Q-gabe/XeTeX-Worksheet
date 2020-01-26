@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% XeTeX Worksheet Template
+% Version 1.0
+% https://github.com/Q-gabe/XeTeX-Worksheet
+% Author: Gabriel Ong (http://q-gabe.me)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Preamble
+% ---
+\documentclass[a4paper]{qgabe-worksheet}
+
+% Packages
+% ---
+\usepackage{amsmath} % Advanced math typesetting
+\usepackage[english]{babel} % Change hyphenation rules
+\usepackage{hyperref} % Add a link to your document
+\usepackage{graphicx} % Add pictures to your document
+\usepackage{listings} % Source code formatting and highlighting
+\usepackage{fontspec} % Import custom fonts
+\usepackage{csquotes} % Context-Sensitive Quotation support
+\usepackage{titling} % Allows document settings to be accessed in text
+
+% Document Settings
+% ---
+\author{John Doe} % The authors name
+\title{XeTeX Worksheet Test} % The title of the document
+\date{\today{}} % Sets date you can remove \today{} and type a date manually
+
+% Worksheet begins
+% ---
+\begin{document}
+
+
+%
+% WORKSHEET DETAILS
+% {Module Code}{Title}{Subtitle/Class}{Author}{Matrix No/Student No}{date}
+%
+\worksheetdetails{CS101}{\thetitle}{Tutorial Class 1}{\theauthor}{A0123456Z}{\thedate}
+
+
+%
+% BODY CONTENT
+% Insert your content below!
+%
+\section{Section}
+\subsection{Subsection}
+\subsubsection{Subsubsection}
+\paragraph{Introducing \LaTeX{}} % Paragraphs have no numbering
+\flushleft
+As a Computer Science undergraduate, one needs to be able to learn many new technologies on the go. One particular technology that I learnt that I want to \emph{emphasize} is \textbf{LaTeX} (stylized as \LaTeX{}, pronounced \textquote{\textit{Lah-Tek}}). Here's an excerpt from Wikipedia on LaTeX:
+
+\begin{displayquote}
+LaTeX is a document preparation system. When writing, the writer uses plain text as opposed to the formatted text found in WYSIWYG word processors like Microsoft Word, LibreOffice Writer and Apple Pages. 
+\end{displayquote}
+Using LaTeX's inherent typesetting makes producing aesthetically pleasing documents \emph{just look better}. Not only that, it works on Windows, Apple and Linux operating systems and is completely free! It might look daunting at first, but with a bit of grit, one will realise how easy LaTeX is to operate.
+
+\subparagraph{Syntax} Here are some of the word formatting options that you can use to add versatility to your text using this template and LaTeX: \\
+\begin{itemize}
+	\item\textsf{\textquote{\texttt{\textbackslash{}textsf\{...\}}} Lighter font}
+	\item\texttt{\textquote{\texttt{\textbackslash{}texttt\{...\}}} Monospaced font}
+	\item\textit{\textquote{\texttt{\textbackslash{}textit\{...\}}} Italicized}
+	\item\textbf{\textquote{\texttt{\textbackslash{}textbf\{...\}}} Bold}
+	\item\textsc{\textquote{\texttt{\textbackslash{}textsc\{...\}}} Small Capitalised Font}
+	\item\uppercase{\textquote{\texttt{\textbackslash{}uppercase\{...\}}} Uppercased}
+	\item Lists:
+	\begin{enumerate}
+		\item You can add numbered lists using the command \textquote{\texttt{\textbackslash{}begin\{enumerate\}}} and \textquote{\texttt{\textbackslash{}end\{enumerate\}}}. Items can be generated using \textquote{\texttt{\textbackslash{}item}}.
+		\item Otherwise, typical unordered lists can be generated using \textquote{\texttt{\textbackslash{}begin\{itemize\}}} and \textquote{\texttt{\textbackslash{}end\{itemize\}}}.
+	\end{enumerate}
+\end {itemize}
+
+You can also use various commands to edit the alignment of blocks of texts:
+\linebreak % Linebreak
+
+\centering
+\textbf{Centered - \textquote{\texttt{\textbackslash{}centering}} }\\
+Hello, here is some text without a meaning. This text should show what a printed text will look like at this place. If you read this text, you will get no information. Really? Is there no information? Is there a difference between this text and some nonsense like not at all!
+\linebreak
+
+\flushleft
+\textbf{Flushed Left - \textquote{\texttt{\textbackslash{}flushleft}} }\\
+Hello, here is some text without a meaning. This text should show what a printed text will look like at this place. If you read this text, you will get no information. Really? Is there no information? Is there a difference between this text and some nonsense like not at all!
+\linebreak
+
+\flushright
+\textbf{Flushed Right - \textquote{\texttt{\textbackslash{}flushright}} }\\
+Hello, here is some text without a meaning. This text should show what a printed text will look like at this place. If you read this text, you will get no information. Really? Is there no information? Is there a difference between this text and some nonsense like not at all!
+\linebreak
+
+\flushleft
+It is easy to manipulate the alignment of text blocks! 
+
+\paragraph{More about \TeX{}, \LaTeX{}, XeTeX and XeLaTeX}
+\flushleft
+To be more precise, \LaTeX{} is actually built on \TeX{}, a typesetting system built mostly by Donald Knuth in 1978. While TeX is the actual typesetting system, LaTeX is actually a set of macros that allows people to quickly build their documents without having to worry about tables, sections, etc. LaTeX files can then be compiled by several engines such as pdftex into a PDF output. XeTeX is an extension to TeX, allowing unicode input and other typesetting features, which uses XeTeX engine. The command to invoke the XeTeX engine is \texttt{xelatex} which has caused some confusion regarding the nomenclature. To see more, see \href{https://tex.stackexchange.com/questions/296616/questions-regarding-the-distinction-between-xetex-and-xelatex-and-how-they-relat}{this post}.
+
+\flushleft
+
+\newpage{} % Pagebreak
+
+\end{document} % End of worksheet
+% LaTeX help: https://www.latex-tutorial.com/quick-start/
+% Cheatsheet: https://wch.github.io/latexsheet/
