@@ -98,14 +98,23 @@ Hello, here is some text without a meaning. This text should show what a printed
 \flushleft
 It is easy to manipulate the alignment of text blocks! 
 
+\paragraph{Typesetting for mathematical equations}
+\flushleft
+More notably, LaTeX is amazing for typesetting mathematical equations. By simply enveloping equations in \texttt{\$}, you can create neatly formatted mathematical equations. Here is a small example for what you can do: \\
+\begin{itemize}
+	\item Simple Equations: $f(x) = x^2 + \dotsc$
+	\item Integrals: $F(x) = \int^a_b \frac{1}{3}x^3$
+	\item Matrices: $\left[\begin{matrix}1 & 0\\0 & 1\end{matrix}\right]$
+	\item Fractions:$ \left(\frac{1}{\sqrt{x}}\right)$
+	\item For more formatting options, see \href{https://en.wikibooks.org/wiki/LaTeX/Mathematics}{this link}.
+\end{itemize}
+
 \paragraph{More about \TeX{}, \LaTeX{}, XeTeX and XeLaTeX}
 \flushleft
 To be more precise, \LaTeX{} is actually built on \TeX{}, a typesetting system built mostly by Donald Knuth in 1978. While TeX is the actual typesetting system, LaTeX is actually a set of macros that allows people to quickly build their documents without having to worry about tables, sections, etc. LaTeX files can then be compiled by several engines such as pdftex into a PDF output. XeTeX is an extension to TeX, allowing unicode input and other typesetting features, which uses XeTeX engine. The command to invoke the XeTeX engine is \texttt{xelatex} which has caused some confusion regarding the nomenclature. To see more, see \href{https://tex.stackexchange.com/questions/296616/questions-regarding-the-distinction-between-xetex-and-xelatex-and-how-they-relat}{this post}.
 
-\flushleft
-
+\watermark % Template watermark - Remove this if you don't want this in, but spread the love if you can! <3
 \newpage{} % Pagebreak
-
 \end{document} % End of worksheet
 % LaTeX help: https://www.latex-tutorial.com/quick-start/
 % Cheatsheet: https://wch.github.io/latexsheet/
