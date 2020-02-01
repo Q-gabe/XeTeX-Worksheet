@@ -68,4 +68,16 @@
 	\\[5pt]
 }
 
+%Watermark command
+\newcommand{\watermark}{
+	\vfill
+	\hfill
+	\raggedright{
+		\fontsize{8pt}{8pt}
+		\color{greyed}
+		\fontspec[Path = fonts/lato/]{Lato-Light}\selectfont Made using Q-gabe's XeLaTeX template (tiny.cc/xetex-worksheet).
+	}
+}
+
+
 \renewcommand{\normalsize}{\fontsize{12}{15}\selectfont}
